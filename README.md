@@ -1,21 +1,39 @@
-This is a Dockerfile setup for couchpotato - https://couchpota.to/
+[cookbookurl]: https://geek-cookbook.funkypenguin.co.nz
+[kitchenurl]: https://discourse.kitchen.funkypenguin.co.nz
+[discordurl]: http://chat.funkypenguin.co.nz
+[patreonurl]: https://patreon.com/funkypenguin
+[blogurl]: https://www.funkypenguin.co.nz
+[hub]: https://hub.docker.com/r/funkypenguin/htpc-cron/
 
-It's based on needo/couchpotato, with the only adjustment being running the 
-couchpotato user as UID 4242 "htpc". I built it because I wanted a consistent
-way to give my containerized HTPC apps access to my media library
+[![geek-cookbook](https://raw.githubusercontent.com/funkypenguin/www.funkypenguin.co.nz/master/images/geek-kitchen-banner.png)][cookbookurl]
 
-By default this Docker installs the latest stable version of CouchPotato:
+# Contents
 
-```
-docker run -d --net="host" --name="couchpotato" -v /path/to/couchpotato/data:/config -v /path/to/downloads:/downloads -v /path/to/movies:/movies -v /etc/localtime:/etc/localtime:ro -p 5050:5050 funkypenguin/couchpotato
-```
+1. [What is funkypenguin/oauth2_proxy?](#what-is-funkypenguin-htpc-cron)
+2. [Why should I use this?](#why-should-i-use-this)
+3. [How do I use it?](#how-do-i-use-this)
+4. [CHANGELOG](#changelog)
 
-Edge
-----
-If you would like to run the latest updates from the master branch as well as enable in-app updates run:
+---
 
-```
-docker run -d --net="host" --name="couchpotato" -v /path/to/couchpotato/data:/config -v /path/to/downloads:/downloads -v /path/to/movies:/movies -v /etc/localtime:/etc/localtime:ro -e EDGE=1 -p 5050:5050 funkypenguin/couchpotato
-```
-# htpc-cron
-# htpc-cron
+This container is maintained by [Funky Penguin's Geek Cookbook][cookbookurl], a collection of "recipes" to run popular applications
+on Docker Swarm or Kubernetes, in a cheeky, geek format.
+
+Got more details at:
+* ![Discourse with us!](https://img.shields.io/discourse/https/discourse.geek-kitchen.funkypenguin.co.nz/topics.svg) [Forums][kitchenurl]
+* ![Chat with us!](https://img.shields.io/discord/396055506072109067.svg) [Friendly Discord Chat][discordurl]
+* ![Geek out with us!](https://img.shields.io/badge/recipies-35+-brightgreen.svg) [Funky Penguin's Geek Cookbook][cookbookurl]
+* ![Thank YOU](https://img.shields.io/badge/thank-you-brightgreen.svg) [Patreon][patreonurl]
+* ![Read blog!](https://img.shields.io/badge/read-blog-brightgreen.svg) [Blog][blogurl]
+
+---
+
+# What is funkypenguin/htpc-cron ?
+
+
+# Why should I use this?
+
+# How do I use this?
+
+
+# CHANGELOG
